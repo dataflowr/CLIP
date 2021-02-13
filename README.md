@@ -1,3 +1,9 @@
+# DL-DIY potential project ideas
+- use pre-trained CLIP model on a different dataset for testing its potential for retrieval, e.g. Oxford Buildings (scripts for downloading data [here](https://github.com/filipradenovic/cnnimageretrieval-pytorch))
+- use pre-trained CLIP in a zero-shot setting on an image dataset with some textual descriptions for images, e.g. dataset of paintings from a museum. Test out the performance. You can watch the first minutes of [this video](https://www.youtube.com/watch?v=T9XSU0pKX2E) to get an idea of the zero-shot setting here.
+
+-----------------
+
 # CLIP
 
 [[Blog]](https://openai.com/blog/clip/) [[Paper]](https://cdn.openai.com/papers/Learning_Transferable_Visual_Models_From_Natural_Language_Supervision.pdf) [[Model Card]](model-card.md) [[Colab]](https://colab.research.google.com/github/openai/clip/blob/master/notebooks/Interacting_with_CLIP.ipynb)
