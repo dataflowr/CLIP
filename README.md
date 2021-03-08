@@ -15,12 +15,14 @@ Source: http://imagine.enpc.fr/~shenx/ArtMiner/
 Objective: Extract features from the paintings data (only using vision model of CLIP), then search for the similar images within the dataset, using distance metric (Euclidean) or cosine similarity.
 
 **Experiment I:**
-      - Features retrieval using only the first convolutional layer of Visual network of ViT Clip Model.
+      - Features retrieval using only the first convolutional layer of *Visual network of ViT Clip Model.*
       
        [X] L2 normalization -> Max-pooling -> Normalization.                 [X] L2 normalization -> Regional-Max pooling -> L2 Normalization.
 
+<img src="images/art_maxpool.JPG" width="450" height="170"/> <img src="images/art_rmac.JPG" width="450" height="170"/> 
+
 **Experiment II:**
-      - Features retrieval using only the first 3 convolutional layer of Visual network of ResNet50  Clip Model.
+      - Features retrieval using only the first 3 convolutional layer of *Visual network of ResNet50  Clip Model*.
       
        [X] L2 normalization -> Max-pooling -> Normalization.                [X] L2 normalization -> Regional-Max pooling -> L2 Normalization.
 
@@ -29,6 +31,8 @@ Objective: Extract features from the paintings data (only using vision model of 
        [X] Extract Features from first conv1 layer (786 feature vectors) -> L2 normalization -> Regional-Max pooling -> L2 Normalization.
             
        [X] Extract Features from first conv1 layer (512 feature vector) -> PCA (512  ->> 100) -> K-Means Clustering (32 Cluster).
+ 
+<img src="images/art_conv_knn.JPG" width="450" height="170"/> <img src="images/art_all_knn.JPG" width="450" height="170"/> 
 
 #### 2\ Oxford Buildings Dataset
 Source: https://www.robots.ox.ac.uk/~vgg/data/paintings/
@@ -37,6 +41,8 @@ Source: https://www.robots.ox.ac.uk/~vgg/data/paintings/
       - Features retrieval using only the first convolutional layer of Visual network of ViT Clip Model.
       
         [X] L2 normalization -> Max-pooling -> Normalization.            [X] L2 normalization -> Regional-Max pooling -> L2 Normalization.
+
+<img src="images/oxford_maxpool.JPG" width="450" height="170"/> <img src="images/oxford_rmac.JPG" width="450" height="170"/> 
 
 **Experiment II:**
       - Features retrieval using only the first 3 convolutional layer of Visual network of ResNet50  Clip Model.
@@ -48,13 +54,13 @@ Source: https://www.robots.ox.ac.uk/~vgg/data/paintings/
         [X] Extract Features from first conv1 layer (786 feature vectors) -> L2 normalization -> Regional-Max pooling -> L2 Normalization.
             
         [X] Extract Features from first conv1 layer (512 feature vector) -> PCA (512  ->> 100) -> K-Means Clustering (10 Cluster).
+        
+<img src="images/oxford_conv_knn.JPG" width="450" height="170"/> <img src="images/oxford_all_knn.png" width="450" height="170"/> 
 
 ## II: Zero-Shot learning:
 #### 1\ Oxford Buildings Dataset
 
 #### 2\ Emotion Dataset
-
-
-
+<img src="images/corr_emotionDataset.png" width="450" height="170"/> <img src="images/emotions_zeroshot.JPG" width="450" height="170"/> 
 
 
