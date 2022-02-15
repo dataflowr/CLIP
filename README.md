@@ -1,6 +1,7 @@
 # DL-DIY potential project ideas
 - use pre-trained CLIP model on a different dataset for testing its potential for retrieval, e.g. Oxford Buildings (scripts for downloading data [here](https://github.com/filipradenovic/cnnimageretrieval-pytorch))
 - use pre-trained CLIP in a zero-shot setting on an image dataset with some textual descriptions for images, e.g. dataset of paintings from a museum. Test out the performance. You can watch the first minutes of [this video](https://www.youtube.com/watch?v=T9XSU0pKX2E) to get an idea of the zero-shot setting here.
+- extend CLIP predictions to pixel-wise segmentation, see idea from [LSeg](https://github.com/isl-org/lang-seg)
 
 -----------------
 
